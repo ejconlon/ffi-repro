@@ -2,8 +2,12 @@
 clean:
 	cabal clean
 
+.PHONY: update
+update:
+	cabal update
+
 .PHONY: build
-build:
+build: update
 	cabal build -v
 
 .PHONY: exec

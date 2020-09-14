@@ -10,3 +10,4 @@ executable ffi-repro
   include-dirs:        life
   extra-libraries:     stdc++
   cxx-sources:         life/life.cpp
+  cxx-options:         -D__LIFE_MEANING__=42

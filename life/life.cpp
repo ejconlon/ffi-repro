@@ -1,5 +1,9 @@
 #include "life.h"
 
+#ifndef __LIFE_MEANING__
+#error "No meaning found."
+#endif
+
 int meaning_of_life() {
-    return 42;
+    return __LIFE_MEANING__;
 }
