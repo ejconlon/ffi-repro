@@ -2,6 +2,8 @@
 
 module Main where
 
+import Foreign.C (CInt (..))
+
 foreign import ccall "life.h meaning_of_life"
   meaning_of_life :: IO CInt
 
