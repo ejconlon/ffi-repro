@@ -11,4 +11,4 @@ You can easily run this example if you have `ghcup` installed to switch compiler
     make set_8_10 clean exec
     # Compilation fails in C++ error pragma ("no meaning found")
 
-For your convenience, the output on my system has been saved in `output`.
+For your convenience, the output from my attempts on OSX and Linux have been saved in `output`.
