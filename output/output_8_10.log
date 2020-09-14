@@ -1,0 +1,183 @@
+ghcup set ghc 8.10.2
+[1m[92m[ Info  ][0m[0m GHC 8.10.2 successfully set as default version
+cabal clean
+cabal build -v
+Project settings changed, reconfiguring...
+creating /Users/ejconlon/code/ffi-repro/dist-newstyle
+creating /Users/ejconlon/code/ffi-repro/dist-newstyle/cache
+this build was affected by the following (project) config files:
+Compiler settings changed, reconfiguring...
+/Users/ejconlon/.ghcup/bin/ghc --numeric-version
+looking for tool ghc-pkg near compiler in /Users/ejconlon/.ghcup/bin
+found ghc-pkg in /Users/ejconlon/.ghcup/bin/ghc-pkg
+/Users/ejconlon/.ghcup/bin/ghc-pkg --version
+/Users/ejconlon/.ghcup/bin/ghc --supported-languages
+/Users/ejconlon/.ghcup/bin/ghc --info
+/Users/ejconlon/.ghcup/bin/ghc --print-global-package-db
+Reading available packages of hackage.haskell.org...
+Using most recent state specified from most recent cabal update
+index-state(hackage.haskell.org) = 2020-09-14T03:35:44Z
+/usr/local/bin/pkg-config --version
+/usr/local/bin/pkg-config --variable pc_path pkg-config
+/usr/local/bin/pkg-config --version
+/usr/local/bin/pkg-config --list-all
+/usr/local/bin/pkg-config --modversion libtasn1 gio-unix-2.0 libusb-1.0 libheif libecpg_compat gobject-introspection-no-export-1.0 zlib gio-2.0 vdesnmp hogweed gladeui-2.0 cairo-gobject opus libpng16 harfbuzz-icu IlmBase gnutls-dane cairo-quartz-font cairo-ps gmodule-2.0 p11-kit-1 glib-2.0 ImageMagick x265 termkey gmpxx pango MagickCore-7.Q16HDRI uuid MagickWand libevent_core libedit adwaita-icon-theme samplerate vdehist libuv libpcrecpp pangoft2 libevent_pthreads libexslt sdl2 libffi gdk-pixbuf-2.0 gmodule-no-export-2.0 libidn2 OpenEXR luajit liblzma lqr-1 'gtk+-3.0' gobject-introspection-1.0 'Magick++' lua5.3 'gtk+-unix-print-2.0' libiodbc libssh pangofc gdk-2.0 lcms2 gtk-mac-integration-gtk2 gtk-mac-integration-gtk3 yaml-0.1 apr-util-1 libevent libxml-2.0 flac libevent_openssl libutf8proc cairo-pdf lua-5.3 ncurses sndfile expat graphite2 libwebpdecoder libwebpmux gdk-quartz-2.0 apr-1 'flac++' pangocairo vorbisfile gmodule-export-2.0 libjpeg libpq portaudio-2.0 sqlite3 gnutls gsettings-desktop-schemas vterm pixman-1 nettle lua cairo-quartz-image pangoot 'gtk+-quartz-2.0' vdemgmt libpcre16 libtiff-4 gobject-2.0 vorbisenc 'Magick++-7.Q16HDRI' gthread-2.0 libpng cairo-fc jack libunbound MagickWand-7.Q16HDRI harfbuzz-subset ImageMagick-7.Q16HDRI cairo libopenjp2 libecpg libpcreposix libwebp fontconfig fluidsynth gdk-3.0 libcurl cairo-png cairo-ft libde265 epoxy gtk-mac-integration 'gtk+-unix-print-3.0' atk gpg-error ksba libqrencode unibilium ogg cairo-svg libassuan shared-mime-info cairo-quartz portaudiocpp gdk-quartz-3.0 libgcrypt vorbis harfbuzz lzo2 freealut libpgtypes libpcre vdeplug cairo-script libpcre32 msgpack gail-3.0 libsass freetype2 MagickCore fribidi libevent_extra cairo-tee 'gtk+-quartz-3.0' librsvg-2.0 gmp gail oniguruma harfbuzz-gobject libwebpdemux ncursesw 'gtk+-2.0' libxslt
+Resolving dependencies...
+Component graph for ffi-repro-0.1.0.0: component exe:ffi-repro
+component ffi-repro-0.1.0.0-inplace-ffi-repro include base-4.14.1.0
+unit ffi-repro-0.1.0.0-inplace-ffi-repro include base-4.14.1.0
+Build profile: -w ghc-8.10.2 -O1
+In order, the following will be built:
+ - ffi-repro-0.1.0.0 (exe:ffi-repro) (first run)
+creating /Users/ejconlon/code/ffi-repro/dist-newstyle/build
+creating /Users/ejconlon/code/ffi-repro/dist-newstyle/tmp
+creating /Users/ejconlon/code/ffi-repro/dist-newstyle/packagedb
+/Users/ejconlon/.ghcup/bin/ghc-pkg init /Users/ejconlon/code/ffi-repro/dist-newstyle/packagedb/ghc-8.10.2
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2
+creating /Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/cache
+Using self-exec internal setup method with build-type Simple and args:
+["act-as-setup","--build-type=Simple","--","configure","--verbose=2","--builddir=/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro","--ghc","--prefix=/Users/ejconlon/.cabal","--bindir=/Users/ejconlon/.cabal/bin","--libdir=/Users/ejconlon/.cabal/lib/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0-inplace-ffi-repro","--libsubdir=","--dynlibdir=/Users/ejconlon/.cabal/lib/x86_64-osx-ghc-8.10.2","--libexecdir=/Users/ejconlon/.cabal/libexec/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0","--libexecsubdir=","--datadir=/Users/ejconlon/.cabal/share/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0","--datasubdir=","--docdir=/Users/ejconlon/.cabal/share/doc/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0","--htmldir=/Users/ejconlon/.cabal/share/doc/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0/html","--haddockdir=/Users/ejconlon/.cabal/share/doc/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0/html","--sysconfdir=/Users/ejconlon/.cabal/etc","--enable-library-vanilla","--disable-library-profiling","--enable-shared","--disable-static","--disable-executable-dynamic","--disable-executable-static","--disable-profiling","--profiling-detail=default","--library-profiling-detail=default","--enable-optimization","--disable-debug-info","--disable-library-for-ghci","--disable-split-sections","--disable-split-objs","--disable-executable-stripping","--disable-library-stripping","--package-db=clear","--package-db=global","--package-db=/Users/ejconlon/.cabal/store/ghc-8.10.2/package.db","--package-db=/Users/ejconlon/code/ffi-repro/dist-newstyle/packagedb/ghc-8.10.2","--cid=ffi-repro-0.1.0.0-inplace-ffi-repro","--extra-prog-path=/Users/ejconlon/.cabal/bin","--dependency=base=base-4.14.1.0","--disable-coverage","--exact-configuration","--with-ghc=/Users/ejconlon/.ghcup/bin/ghc","--with-ghc-pkg=/Users/ejconlon/.ghcup/bin/ghc-pkg","--ghc-option=-hide-all-packages","exe:ffi-repro"]
+/Users/ejconlon/.ghcup/bin/cabal-3.2.0.0 act-as-setup --build-type=Simple
+-- configure --verbose=2
+--builddir=/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro
+--ghc --prefix=/Users/ejconlon/.cabal
+--bindir=/Users/ejconlon/.cabal/bin
+--libdir=/Users/ejconlon/.cabal/lib/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0-inplace-ffi-repro
+--libsubdir= --dynlibdir=/Users/ejconlon/.cabal/lib/x86_64-osx-ghc-8.10.2
+--libexecdir=/Users/ejconlon/.cabal/libexec/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0
+--libexecsubdir=
+--datadir=/Users/ejconlon/.cabal/share/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0
+--datasubdir=
+--docdir=/Users/ejconlon/.cabal/share/doc/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0
+--htmldir=/Users/ejconlon/.cabal/share/doc/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0/html
+--haddockdir=/Users/ejconlon/.cabal/share/doc/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0/html
+--sysconfdir=/Users/ejconlon/.cabal/etc --enable-library-vanilla
+--disable-library-profiling --enable-shared --disable-static
+--disable-executable-dynamic --disable-executable-static --disable-profiling
+--profiling-detail=default --library-profiling-detail=default
+--enable-optimization --disable-debug-info --disable-library-for-ghci
+--disable-split-sections --disable-split-objs --disable-executable-stripping
+--disable-library-stripping --package-db=clear --package-db=global
+--package-db=/Users/ejconlon/.cabal/store/ghc-8.10.2/package.db
+--package-db=/Users/ejconlon/code/ffi-repro/dist-newstyle/packagedb/ghc-8.10.2
+--cid=ffi-repro-0.1.0.0-inplace-ffi-repro
+--extra-prog-path=/Users/ejconlon/.cabal/bin
+--dependency=base=base-4.14.1.0 --disable-coverage --exact-configuration
+--with-ghc=/Users/ejconlon/.ghcup/bin/ghc
+--with-ghc-pkg=/Users/ejconlon/.ghcup/bin/ghc-pkg
+--ghc-option=-hide-all-packages exe:ffi-repro
+Using Parsec parser
+Configuring executable 'ffi-repro' for ffi-repro-0.1.0.0..
+Dependency base ==4.14.1.0: using base-4.14.1.0
+Source component graph: component exe:ffi-repro
+Configured component graph:
+    component ffi-repro-0.1.0.0-inplace-ffi-repro include base-4.14.1.0
+Linked component graph:
+    unit ffi-repro-0.1.0.0-inplace-ffi-repro include base-4.14.1.0
+Ready component graph:
+    definite ffi-repro-0.1.0.0-inplace-ffi-repro depends base-4.14.1.0
+Using Cabal-3.2.0.0 compiled by ghc-8.6
+Using compiler: ghc-8.10.2
+Using install prefix: /Users/ejconlon/.cabal
+Executables installed in: /Users/ejconlon/.cabal/bin
+Libraries installed in:
+/Users/ejconlon/.cabal/lib/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0-inplace-ffi-repro
+Dynamic Libraries installed in:
+/Users/ejconlon/.cabal/lib/x86_64-osx-ghc-8.10.2
+Private executables installed in:
+/Users/ejconlon/.cabal/libexec/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0
+Data files installed in:
+/Users/ejconlon/.cabal/share/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0
+Documentation installed in:
+/Users/ejconlon/.cabal/share/doc/x86_64-osx-ghc-8.10.2/ffi-repro-0.1.0.0
+Configuration files installed in: /Users/ejconlon/.cabal/etc
+No alex found
+Using ar found on system at: /usr/bin/ar
+No c2hs found
+No cpphs found
+No doctest found
+Using gcc version 11.0.3 found on system at: /usr/bin/gcc
+Using ghc version 8.10.2 given by user at: /Users/ejconlon/.ghcup/bin/ghc
+Using ghc-pkg version 8.10.2 given by user at:
+/Users/ejconlon/.ghcup/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.24.0 found on system at:
+/Users/ejconlon/.ghcup/bin/haddock
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.68 found on system at: /Users/ejconlon/.ghcup/bin/hpc
+Using hsc2hs version 0.68.7 found on system at:
+/Users/ejconlon/.ghcup/bin/hsc2hs
+No hscolour found
+No jhc found
+Using ld found on system at: /usr/bin/ld
+Using pkg-config version 0.29.2 found on system at: /usr/local/bin/pkg-config
+Using runghc version 8.10.2 found on system at:
+/Users/ejconlon/.ghcup/bin/runghc
+Using strip found on system at: /usr/bin/strip
+Using tar found on system at: /usr/bin/tar
+No uhc found
+Using self-exec internal setup method with build-type Simple and args:
+["act-as-setup","--build-type=Simple","--","build","--verbose=2","--builddir=/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro"]
+/Users/ejconlon/.ghcup/bin/cabal-3.2.0.0 act-as-setup --build-type=Simple
+-- build --verbose=2
+--builddir=/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro
+Component build order: executable 'ffi-repro'
+/Users/ejconlon/.ghcup/bin/ghc-pkg init /Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/package.conf.inplace
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/autogen
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/autogen
+Preprocessing executable 'ffi-repro' for ffi-repro-0.1.0.0..
+Building executable 'ffi-repro' for ffi-repro-0.1.0.0..
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp
+/Users/ejconlon/.ghcup/bin/ghc --make -no-link -fbuilding-cabal-package -O -static -outputdir /Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp -odir /Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp -hidir /Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp -stubdir /Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp -i -i/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp -i. -i/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/autogen -i/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/global-autogen -I/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/autogen -I/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/global-autogen -I/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp -Ilife -I/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/life -optP-include -optP/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/autogen/cabal_macros.h -hide-all-packages -Wmissing-home-modules -no-user-package-db -package-db /Users/ejconlon/.cabal/store/ghc-8.10.2/package.db -package-db /Users/ejconlon/code/ffi-repro/dist-newstyle/packagedb/ghc-8.10.2 -package-db /Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/package.conf.inplace -package-id base-4.14.1.0 -XHaskell2010 ./Main.hs -hide-all-packages
+[1 of 1] Compiling Main             ( Main.hs, /Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp/Main.o )
+Building C++ Sources...
+creating
+/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp
+/Users/ejconlon/.ghcup/bin/ghc -c -fPIC -odir /Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp -I/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/autogen -I/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/global-autogen -I/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/ffi-repro/ffi-repro-tmp -Ilife -I/Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/build/life -optc-O2 '-optc-D__LIFE_MEANING__=42' -hide-all-packages -no-user-package-db -package-db /Users/ejconlon/.cabal/store/ghc-8.10.2/package.db -package-db /Users/ejconlon/code/ffi-repro/dist-newstyle/packagedb/ghc-8.10.2 -package-db /Users/ejconlon/code/ffi-repro/dist-newstyle/build/x86_64-osx/ghc-8.10.2/ffi-repro-0.1.0.0/x/ffi-repro/package.conf.inplace -package-id base-4.14.1.0 life/life.cpp -hide-all-packages
+
+life/life.cpp:4:2: error:  error: "No meaning found."
+  |
+4 | #error "No meaning found."
+  |  ^
+#error "No meaning found."
+ ^
+
+life/life.cpp:8:12: error:
+     error: use of undeclared identifier '__LIFE_MEANING__'
+        return __LIFE_MEANING__;
+               ^
+  |
+8 |     return __LIFE_MEANING__;
+  |            ^
+2 errors generated.
+`gcc' failed in phase `C Compiler'. (Exit code: 1)
+make: *** [build] Error 1
